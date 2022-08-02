@@ -78,7 +78,6 @@ class Solution:
             self.top+=1
             self.lst[self.top]=character
 
-
     def enqueue_character(self, character):
         """
         Enqueue the character to queue, if queue is not full.
