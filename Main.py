@@ -15,9 +15,9 @@ class Solution:
         Arguments:
           size: An integer to set the size of stack and queue.
         """
-        self.lst = []
-        self.queue = []
         self.size = size
+        self.lst = [None]*size
+        self.queue = [None]*size
         self.top = -1
         self.rear = -1
         self.front = -1
