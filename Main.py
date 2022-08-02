@@ -108,7 +108,7 @@ class Solution:
         t=self.lst[self.top]
         del self.lst[self.top]
         self.top-=1
-        return t
+        return 
 
    
     def dequeue_character(self):
