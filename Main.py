@@ -41,7 +41,7 @@ class Solution:
         """
         if (self.front == self.size-1 or self.front>self.rear):
             return 1
-        else
+        else:
             return 0
 
     def is_stack_full(self):
