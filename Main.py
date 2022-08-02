@@ -149,10 +149,10 @@ v=""
 for i in range(solution.front,solution.rear+1):
     u+=solution.pop_character()
     v+=solution.dequeue_character()
-    if a!=b:
-        is_palindrome = False
-    else:
-        is_palindrome = True
+if u!=v:
+    is_palindrome = False
+else:
+    is_palindrome = True
 
 # finally print whether string text is palindrome or not.
 if is_palindrome:
