@@ -28,7 +28,10 @@ class Solution:
         Returns:
           True if it is empty, else returns False.
         """
-        # Write your code here
+        if self.top == -1 :
+            return 1
+         else:
+            return 0
 
     def is_queue_empty(self):
         """
@@ -36,7 +39,10 @@ class Solution:
         Returns:
           True if it is empty, else returns False.
         """
-        # Write your code here
+        if( self.front == self.size-1 or self.front == -1)
+            return 1
+        else
+            return 0
 
     def is_stack_full(self):
         """
@@ -44,7 +50,10 @@ class Solution:
         Returns:
           True if it is full, else returns False.
         """
-        # Write your code here
+        if self.top == (self.size - 1):
+            return 1
+        else:
+            return 0
 
     def is_queue_full(self):
         """
@@ -52,8 +61,11 @@ class Solution:
         Returns:
           True if it is full, else returns False.
         """
-        # Write your code here
-
+        if ((rear=max–1 and front=0 ) or front=rear+1 ):
+            return 1
+        else:
+            return 0
+            
     def push_character(self, character):
         """
         Push the character to stack, if stack is not full.
@@ -61,6 +73,9 @@ class Solution:
             character: A character that will be pushed to the stack.
         """
         # Write your code here
+        if not self.is_full():
+            self.top = self.top + 1
+            self.items[self.top] = data
 
     def enqueue_character(self, character):
         """
@@ -69,6 +84,14 @@ class Solution:
             character: A character that will be enqueued to queue.
         """
         # Write your code here
+        if(self.front==-1):
+            self.front = 0
+            self.rear = 0
+         else:
+            if (self.rear == self.front - 1)
+                rear = 0;
+            else:
+                rear = rear + 1;
 
     def pop_character(self):
         """
@@ -77,7 +100,11 @@ class Solution:
           The data that is popped out if the stack is not empty.
         """
         # Write your code here
-
+        if not self.is_empty():
+            v = self.items[self.top]
+            del self.items[self.top]
+            self.top = self.top - 1
+   
     def dequeue_character(self):
         """
         Do dequeue operation if the queue is not empty.
@@ -85,6 +112,18 @@ class Solution:
           The data that is dequeued if the queue is not empty.
         """
         # Write your code here
+        if (front == -1):
+        cout<<"Queue Underflow\n";
+        return ;
+
+        if (front == rear)
+            front = -1;
+            rear = -1;
+        else
+            if (front == MAX - 1)
+            front = 0;
+        else
+            front = (front + 1)%MAX;
 
 
 # read the string text
@@ -108,7 +147,6 @@ compare both characters
 If the comparison fails, set is_palindrome as False.
 '''
 # Write the necessary logic
-
 
 # finally print whether string text is palindrome or not.
 if is_palindrome:
