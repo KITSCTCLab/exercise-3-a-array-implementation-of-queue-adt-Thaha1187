@@ -66,7 +66,6 @@ class Solution:
         else:
             return 0
 
-            
     def push_character(self, character):
         """
         Push the character to stack, if stack is not full.
@@ -122,7 +121,6 @@ class Solution:
             self.front+=1
             return b
 
-
 # read the string text
 text = input()
 
@@ -134,7 +132,9 @@ solution = Solution(length_of_text)
 
 # push/enqueue all the characters of string text to stack
 for index in range(length_of_text):
-    # Write code here
+# Write code here
+solution.push_character(text[index])
+solution.enqueue_character(text[index])
 
 is_palindrome = True
 '''
@@ -144,11 +144,11 @@ compare both characters
 If the comparison fails, set is_palindrome as False.
 '''
 # Write the necessary logic
-a=""
-b=""
+u=""
+v=""
 for i in range(solution.front,solution.rear+1):
-    a+=solution.pop_character()
-    b+=solution.dequeue_character()
+    u+=solution.pop_character()
+    v+=solution.dequeue_character()
     if a!=b:
         is_palindrome = False
     else:
