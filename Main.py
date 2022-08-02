@@ -30,7 +30,7 @@ class Solution:
         """
         if self.top == -1 :
             return 1
-         else:
+        else:
             return 0
 
     def is_queue_empty(self):
@@ -50,7 +50,7 @@ class Solution:
         Returns:
           True if it is full, else returns False.
         """
-        if self.top == (self.size - 1):
+        if self.top == (self.size - 1)
             return 1
         else:
             return 0
