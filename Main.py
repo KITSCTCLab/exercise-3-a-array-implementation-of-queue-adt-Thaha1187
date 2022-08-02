@@ -76,8 +76,8 @@ class Solution:
         # Write your code here
         
         if not self.is_stack_full():
-        self.top+=1
-        self.lst[self.top]=character
+            self.top+=1
+            self.lst[self.top]=character
 
 
     def enqueue_character(self, character):
@@ -89,13 +89,11 @@ class Solution:
         # Write your code here
         
         if not self.is_queue_full():
-        if self.front==-1:
-        self.front=0
-        self.rear+=1
-        self.queue[self.rear]=character
-
-
-
+            if self.front==-1:
+                self.front=0
+                self.rear+=1
+                self.queue[self.rear]=character
+                
     def pop_character(self):
         """
         Do pop operation if the stack is not empty.
@@ -105,12 +103,11 @@ class Solution:
         # Write your code here
         
         if not self.is_stack_empty():
-        t=self.lst[self.top]
-        del self.lst[self.top]
-        self.top-=1
-        return 
+            a =self.lst[self.top]
+            del self.lst[self.top]
+            self.top-=1
+            return a
 
-   
     def dequeue_character(self):
         """
         Do dequeue operation if the queue is not empty.
@@ -120,10 +117,10 @@ class Solution:
         # Write your code here
 
         if not self.is_queue_empty():
-        r=self.queue[0]
-        del self.queue[0]
-        self.front+=1
-        return r
+            b=self.queue[0]
+            del self.queue[0]
+            self.front+=1
+            return b
 
 
 # read the string text
